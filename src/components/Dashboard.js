@@ -73,47 +73,36 @@ const Dashboard = (props) => {
                     <Chart recentTransactions={props.user.recentTransactions} />
                 </div>
             </Card>
-            <VisibilitySensor onChange={visChange} partialVisibility >
-                <animated.div className='cards'
-                // onClick={() => set(open => !open)}
-                >
+            <VisibilitySensor partialVisibility >
+                {({ isVisible }) => {
+                    setCardsVisible(isVisible)
+                    
+                    return (
 
-                    <h3>My Cards </h3>
+                        <animated.div className='cards'
+                        // onClick={() => set(open => !open)}
+                        >
 
-                    <div className='cardContainer'>
-                        {transition((style, item) => (
-                            <animated.div
-                                className='card credit'
-                                style={{ ...style, background: item.css }}
-                            >
-                                <h2>{item.title}</h2>
-                                <div>{item.number} &nbsp; Exp: {item.expiration}</div>
+                            <h3>My Cards </h3>
+
+                            <div className='cardContainer'>
+                                {transition((style, item) => (
+                                    <animated.div
+                                        className='card credit'
+                                        style={{ ...style, background: item.css }}
+                                    >
+                                        <h2>{item.title}</h2>
+                                        <div>{item.number} &nbsp; Exp: {item.expiration}</div>
 
 
-                                <span>{props.user.fName + " " + props.user.lName}</span>
-                            </animated.div>
-                        ))}
+                                        <span>{props.user.fName + " " + props.user.lName}</span>
+                                    </animated.div>
+                                ))}
 
-                        {/* {props.user.cards.map((card, id) =>
-
-                        <Card key={id} title={card.title} type="credit">
-                            {card.number}
-                            {card.expiration}
-                            <span>{props.user.fName + " " + props.user.lName}</span>
-                            </Card>
-                        )} */}
-                        {/* <Card title="Debit" type="credit two">
-                        ##########23
-                        10/24
-                        <span>Adam M. Cardholder</span>
-                    </Card>
-                    <Card title="Debit" type="credit three">
-                    ##########23
-                    10/24
-                    <span>Adam M. Cardholder</span>
-                    </Card> */}
-                    </div>
-                </animated.div>
+                            </div>
+                        </animated.div>
+                    )
+                }}
             </VisibilitySensor>
         </ div>
     )
