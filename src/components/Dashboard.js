@@ -17,7 +17,7 @@ import VisibilitySensor from 'react-visibility-sensor'
 
 const Dashboard = (props) => {
     const [open, set] = useState(false)
-    const [cardsVisible, setCardsVisible] = useState(false)
+    const [cardsVisible, setCardsVisible] = useState(true)
 
     const springApi = useSpringRef()
 
