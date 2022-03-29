@@ -1,0 +1,65 @@
+{
+    "fName": "Adam",
+    "lName": "Cardholder",
+    "accountType": "Checking",
+    "accountNo": "123456789",
+    "balance": 12892.42,
+    "recentTransactions":[
+        {
+            "title": "Purchase AIRBNB AUTHORIZED",
+            "date": "03/23/2022",
+            "amount": 1028.04,
+            "isNegative": true,
+            "category": "travel"
+        },
+        {
+            "title": "Payroll Shelby Company Limited",
+            "date": "03/18/2022",
+            "amount": 3050.00,
+            "isNegative": false,
+            "category": "income"
+        },
+        {
+            "title": "Transfer TDAMERITRADE AUTHORIZED",
+            "date": "03/15/2022",
+            "amount": 950.00,
+            "isNegative": true,
+            "category": "investments"
+        },
+        {
+            "title": "Purchase UBER EATS AUTHORIZED",
+            "date": "03/13/2022",
+            "amount": 52.17,
+            "isNegative": true,
+            "category": "Food & Groceries"
+        },
+        {
+            "title": "Purchase APPLE AUTHORIZED",
+            "date": "03/23/2022",
+            "amount": 899.99,
+            "isNegative": true,
+            "category": "Entertainment"
+        }
+    ],
+    "cards": [
+        {
+            "title": "Debit",
+            "number": "1234 5678 9100 1234",
+            "expiration": "5/26",
+            "css": "linear-gradient(#22577a, #80ed99)"
+        },
+        {
+            "title": "Credit",
+            "number": "1234 5678 9100 1234",
+            "css": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+            "expiration": "10/25"
+
+        },
+        {
+            "title": "Visa",
+            "number": "1234 5678 9100 1234",
+            "css": "linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)",
+            "expiration": "08/23"
+        }
+    ]
+}
