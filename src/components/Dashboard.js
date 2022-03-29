@@ -73,7 +73,7 @@ const Dashboard = (props) => {
                     <Chart recentTransactions={props.user.recentTransactions} />
                 </div>
             </Card>
-            <VisibilitySensor onChange={visChange} >
+            <VisibilitySensor onChange={visChange} partialVisibility >
                 <animated.div className='cards'
                 // onClick={() => set(open => !open)}
                 >
